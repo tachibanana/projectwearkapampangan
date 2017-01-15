@@ -5,8 +5,10 @@
 
 <struts>
     <package name="default" extends="struts-default">
-		<action name="getLogin" class="com.app.wearkapampangan.action.LoginAction">
-    		<result name="login">/wear/kapampangan/resources/login.jsp</result>
+		<action name="login" class="com.app.wearkapampangan.action.LoginAction">
+			<result name="success">/wear/kapampangan/resources/success.jsp</result>
+    		<result name="error">/wear/kapampangan/resources/login.jsp</result>
+    		<result name="input">/wear/kapampangan/resources/login.jsp</result>
     	</action>
     </package>
 </struts>
